@@ -1,0 +1,50 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <div class="contact-panel" style="max-width: 300px; margin: 0 auto;">
+      <h1>Contact Us</h1>
+      <p>Get in touch with us using the form below.</p>
+      
+      <form action="submit_contact_form.php" method="POST">
+          <div class="form-group">
+              <input type="text" id="first_name" name="first_name" placeholder="First Name" required style="padding: 8px; width: 100%;">
+          </div>
+          
+          <div class="form-group">
+              <input type="text" id="last_name" name="last_name" placeholder="Last Name" required style="padding: 8px; width: 100%;">
+          </div>
+          
+          <div class="form-group">
+              <input type="tel" id="contact_number" name="contact_number" placeholder="Contact Number" style="padding: 8px; width: 100%;">
+          </div>
+          
+          <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email Address" required style="padding: 8px; width: 100%;">
+          </div>
+          
+          <div class="form-group">
+              <textarea id="message" name="message" rows="4" placeholder="Message" required style="padding: 8px; width: 100%;"></textarea>
+          </div>
+          
+          <div class="form-group" style="text-align: center;">
+              <button type="submit" style="background-color: #007bff; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">Submit</button>
+          </div>
+      </form>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="contact-info-panel" style="background-color: #f8f8f8; padding: 20px;">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong>Centennial College, A3-70</p>
+      <p><strong>Phone:</strong>9111190804</p>
+      <p><strong>Email:</strong>pdol1@my.centennialcollege.ca</p>
+    </div>
+</main>
+
+<!--bottom nav-->
+<!--script section-->
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

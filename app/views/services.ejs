@@ -1,0 +1,44 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+   
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    </div>
+    <div style="display: flex; justify-content: space-between;">
+      <div style="text-align: center;">
+        <img src="/img/live.png" width="200" height="200">
+        <p>Live match updates provide real-time information on ongoing football matches. 
+          Users can stay informed about scores, goals, assists, and other key statistics as the game unfolds. 
+          This feature enhances the fan experience by allowing them to follow their favorite teams and players closely, 
+          even if they can't watch the match live.
+        </p>
+      </div>
+      
+      <div style="text-align: center;">
+        <img src="/img/skills.jpg" width="200" height="250">
+        <p>Skill development videos are instructional content that helps football 
+          enthusiasts improve their playing abilities. These videos cover various aspects of the game, 
+          including dribbling techniques, shooting accuracy, defensive strategies, and more. Users can access these 
+          tutorials to enhance their skills and knowledge of the sport.
+        </p>
+      </div>
+      
+      <div style="text-align: center;">
+        <img src="/img/tournament.jpg" width="200" height="250">
+        <p>Tournament coverage involves comprehensive reporting on football tournaments and leagues.
+           It includes fixtures, results, match summaries, team standings, and player performance statistics. 
+           This feature keeps fans updated on their favorite competitions, whether it's a local league or 
+           a prestigious international tournament like the World Cup.
+        </p>
+      </div>
+    </div>
+    </main>
+    <!--bottom nav-->
+   
+   
+      <!--script section-->
+      <%- include ('partials/bottom_nav.ejs') %>
+      <%- include ('partials/footer.ejs') %>
+   
